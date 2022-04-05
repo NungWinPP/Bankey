@@ -14,6 +14,10 @@
 		054A52AC27FBBAAC0057DC44 /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52AB27FBBAAC0057DC44 /* NSNotificationName.swift */; };
 		054A52AE27FBBC640057DC44 /* UITextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52AD27FBBC640057DC44 /* UITextField+SecureToggle.swift */; };
 		054A52B127FBCC870057DC44 /* ShakeyBellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52B027FBCC870057DC44 /* ShakeyBellView.swift */; };
+		054A52B427FBE7620057DC44 /* AccountSummaryHeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52B327FBE7620057DC44 /* AccountSummaryHeaderModel.swift */; };
+		054A52B627FBE86B0057DC44 /* Date+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52B527FBE86B0057DC44 /* Date+Utils.swift */; };
+		054A52B827FC1A050057DC44 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52B727FC1A050057DC44 /* AccountSummaryViewController+Networking.swift */; };
+		054A52BA27FCE34F0057DC44 /* AccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054A52B927FCE34F0057DC44 /* AccountModel.swift */; };
 		0567662127FA56E900704881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0567662027FA56E900704881 /* AppDelegate.swift */; };
 		0567662527FA56E900704881 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0567662427FA56E900704881 /* LoginViewController.swift */; };
 		0567662A27FA56EB00704881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0567662927FA56EB00704881 /* Assets.xcassets */; };
@@ -49,6 +53,10 @@
 		054A52AB27FBBAAC0057DC44 /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		054A52AD27FBBC640057DC44 /* UITextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		054A52B027FBCC870057DC44 /* ShakeyBellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShakeyBellView.swift; sourceTree = "<group>"; };
+		054A52B327FBE7620057DC44 /* AccountSummaryHeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderModel.swift; sourceTree = "<group>"; };
+		054A52B527FBE86B0057DC44 /* Date+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Utils.swift"; sourceTree = "<group>"; };
+		054A52B727FC1A050057DC44 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
+		054A52B927FCE34F0057DC44 /* AccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountModel.swift; sourceTree = "<group>"; };
 		0567661D27FA56E900704881 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0567662027FA56E900704881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0567662427FA56E900704881 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +126,15 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		054A52B227FBE74A0057DC44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				054A52B327FBE7620057DC44 /* AccountSummaryHeaderModel.swift */,
+				054A52B927FCE34F0057DC44 /* AccountModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		0567661427FA56E900704881 = {
 			isa = PBXGroup;
 			children = (
@@ -139,6 +156,7 @@
 		0567661F27FA56E900704881 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				054A52B227FBE74A0057DC44 /* Model */,
 				0567662027FA56E900704881 /* AppDelegate.swift */,
 				0567664427FAA5AA00704881 /* MainViewController.swift */,
 				0567663527FA5B0100704881 /* Login */,
@@ -189,6 +207,7 @@
 				0567664027FA8CF100704881 /* LocalState.swift */,
 				054A529A27FBA46C0057DC44 /* CurrencyFormatter.swift */,
 				054A52AB27FBBAAC0057DC44 /* NSNotificationName.swift */,
+				054A52B527FBE86B0057DC44 /* Date+Utils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -197,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				0567664727FAACA500704881 /* AccountSummaryViewController.swift */,
+				054A52B727FC1A050057DC44 /* AccountSummaryViewController+Networking.swift */,
 				054A529427FB90BD0057DC44 /* Header */,
 				054A529527FB90CC0057DC44 /* Cells */,
 			);
@@ -314,6 +334,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0567664327FAA51D00704881 /* UIViewController+Utils.swift in Sources */,
+				054A52B827FC1A050057DC44 /* AccountSummaryViewController+Networking.swift in Sources */,
 				054A52B127FBCC870057DC44 /* ShakeyBellView.swift in Sources */,
 				0567663727FA5B2000704881 /* LoginView.swift in Sources */,
 				0567664127FA8CF100704881 /* LocalState.swift in Sources */,
@@ -322,7 +343,9 @@
 				0567663E27FA87F800704881 /* DummyViewController.swift in Sources */,
 				054A529B27FBA46C0057DC44 /* CurrencyFormatter.swift in Sources */,
 				054A529927FBA4140057DC44 /* Decimal+Utils.swift in Sources */,
+				054A52BA27FCE34F0057DC44 /* AccountModel.swift in Sources */,
 				054A52AC27FBBAAC0057DC44 /* NSNotificationName.swift in Sources */,
+				054A52B427FBE7620057DC44 /* AccountSummaryHeaderModel.swift in Sources */,
 				0567662527FA56E900704881 /* LoginViewController.swift in Sources */,
 				054A529727FB90EF0057DC44 /* AccountSummaryCell.swift in Sources */,
 				0567663C27FA775F00704881 /* OnboardingViewController.swift in Sources */,
@@ -330,6 +353,7 @@
 				0567664827FAACA500704881 /* AccountSummaryViewController.swift in Sources */,
 				0567662127FA56E900704881 /* AppDelegate.swift in Sources */,
 				0567663A27FA71D600704881 /* OnboardingContainerViewController.swift in Sources */,
+				054A52B627FBE86B0057DC44 /* Date+Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
